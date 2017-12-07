@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Plus</title>
+    <title>Plus-<%= yield(:title) %></title>
     <%= csrf_meta_tags %>
 
     <%= render 'layouts/metadata' %>
@@ -23,6 +23,8 @@
   <body>
 
   	<%= render 'layouts/header' %>
+
+    <%= render 'layouts/breadcrumbs' %>
 
     <%= yield %>
 

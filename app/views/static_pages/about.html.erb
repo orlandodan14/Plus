@@ -1,2 +1,333 @@
-<h1>StaticPages#about</h1>
-<p>Find me in app/views/static_pages/about.html.erb</p>
+<% provide(:title, "About") %>
+
+<section class="section white-backgorund">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <div class="title-wrap">
+                    <h2 class="title">Interesting Facts</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                </div>
+            </div><!-- end col -->
+        </div><!-- end row -->
+        
+        <div class="row text-center">
+            <div class="col-sm-4">
+                <h1>3000</h1>
+                <h6>items in Store</h6>
+                <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div><!-- end col -->
+            <div class="col-sm-4">
+                <h1>90%</h1>
+                <h6>Customers come back</h6>
+                <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div><!-- end col -->
+            <div class="col-sm-4">
+                <h1>1.5 Million</h1>
+                <h6>Users</h6>
+                <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div><!-- end col -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section>
+<!-- end section -->
+
+<!-- start section -->
+<section class="section light-backgorund">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="title-wrap">
+                    <h2 class="title">Our Partners</h2>
+                </div>
+            </div><!-- end col -->
+        </div><!-- end row -->
+        
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="owl-demo" class="owl-carousel column-5 owl-theme">
+                    <div class="item">
+                        <figure>
+                            <a href="javascript:void(0);">
+                                <%= image_tag "img/brands/brand_01.jpg", alt: "" %>
+                            </a>
+                        </figure>
+                    </div><!-- end item -->
+                    <div class="item">
+                        <figure>
+                            <a href="javascript:void(0);">
+                                <%= image_tag "img/brands/brand_02.jpg", alt: "" %>
+                            </a>
+                        </figure>
+                    </div><!-- end item -->
+                    <div class="item">
+                        <figure>
+                            <a href="javascript:void(0);">
+                                <%= image_tag "img/brands/brand_03.jpg", alt: "" %>
+                            </a>
+                        </figure>
+                    </div><!-- end item -->
+                    <div class="item">
+                        <figure>
+                            <a href="javascript:void(0);">
+                                <%= image_tag "img/brands/brand_04.jpg", alt: "" %>
+                            </a>
+                        </figure>
+                    </div><!-- end item -->
+                    <div class="item">
+                        <figure>
+                            <a href="javascript:void(0);">
+                                <%= image_tag "img/brands/brand_01.jpg", alt: "" %>
+                            </a>
+                        </figure>
+                    </div><!-- end item -->
+                    <div class="item">
+                        <figure>
+                            <a href="javascript:void(0);">
+                                <%= image_tag "img/brands/brand_02.jpg", alt: "" %>
+                            </a>
+                        </figure>
+                    </div><!-- end item -->
+                    <div class="item">
+                        <figure>
+                            <a href="javascript:void(0);">
+                                <%= image_tag "img/brands/brand_03.jpg", alt: "" %>
+                            </a>
+                        </figure>
+                    </div><!-- end item -->
+                    <div class="item">
+                        <figure>
+                            <a href="javascript:void(0);">
+                                <%= image_tag "img/brands/brand_04.jpg", alt: "" %>
+                            </a>
+                        </figure>
+                    </div><!-- end item -->
+                </div><!-- end owl carousel -->
+            </div><!-- end col -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section>
+<!-- end section -->
+
+<!-- start section -->
+<section class="section image-background layer-white" style="background-image: url(<%= asset_path 'img/coming-soon-bg.jpg' %>);">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="title-wrap">
+                    <i class="fa fa-check fa-3x text-success"></i>
+                    <h2 class="title">Only Certified Products</h2>
+                </div>
+            </div><!-- end col -->
+        </div><!-- end row -->
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="lead text-center text-dark">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+            </div><!-- end col -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section>
+<!-- end section -->
+
+<!-- start section -->
+<section class="section white-backgorund">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="title-wrap">
+                    <h2 class="title">Team</h2>
+                    <h6 class="subtitle">Lorem Ipsum dolar sit amet</h6>
+                </div>
+            </div><!-- end col -->
+        </div><!-- end row -->
+        
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="member zoom-in">
+                    <figure>
+                        <%= image_tag "img/team/team_01.jpg", alt: "" %>
+                        <ul class="social-icons style1">
+                            <li class="facebook"><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li class="twitter"><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li class="instagram"><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                            <li class="dribbble"><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>
+                            <li class="behance"><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Behance"><i class="fa fa-behance"></i></a></li>
+                        </ul>
+                    </figure>
+                    <div class="member-content">
+                        <h5 class="name regular">John Doe</h5>
+                        <h6 class="position thin">Co-Founder, CEO</h6>
+                    </div><!-- end member-content -->    
+                </div><!-- end member -->
+            </div><!-- end col -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="member zoom-in">
+                    <figure>
+                        <%= image_tag "img/team/team_02.jpg", alt: "" %>
+                        <ul class="social-icons style1">
+                            <li class="facebook"><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li class="twitter"><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li class="instagram"><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                            <li class="dribbble"><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>
+                            <li class="behance"><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Behance"><i class="fa fa-behance"></i></a></li>
+                        </ul>
+                    </figure>
+                    <div class="member-content">
+                        <h5 class="name regular">John Doe</h5>
+                        <h6 class="position thin">Marketing Director</h6>
+                    </div><!-- end member-content -->    
+                </div><!-- end member -->
+            </div><!-- end col -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="member zoom-in">
+                    <figure>
+                        <%= image_tag "img/team/team_03.jpg", alt: "" %>
+                        <ul class="social-icons style1">
+                            <li class="facebook"><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li class="twitter"><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li class="instagram"><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                            <li class="dribbble"><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>
+                            <li class="behance"><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Behance"><i class="fa fa-behance"></i></a></li>
+                        </ul>
+                    </figure>
+                    <div class="member-content">
+                        <h5 class="name regular">Jane Doe</h5>
+                        <h6 class="position thin">Sales Director</h6>
+                    </div><!-- end member-content -->    
+                </div><!-- end member -->
+            </div><!-- end col -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="member zoom-in">
+                    <figure>
+                        <%= image_tag "img/team/team_04.jpg", alt: "" %>
+                        <ul class="social-icons style1">
+                            <li class="facebook"><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li class="twitter"><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li class="instagram"><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                            <li class="dribbble"><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>
+                            <li class="behance"><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Behance"><i class="fa fa-behance"></i></a></li>
+                        </ul>
+                    </figure>
+                    <div class="member-content">
+                        <h5 class="name regular">John Doe</h5>
+                        <h6 class="position thin">Brand Director</h6>
+                    </div><!-- end member-content -->    
+                </div><!-- end member -->
+            </div><!-- end col -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section>
+<!-- end section -->
+
+
+<!-- start section -->
+<section class="section white-backgorund">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <div class="title-wrap">
+                    <h2 class="title lines">About Us</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                </div>
+            </div><!-- end col -->
+        </div><!-- end row -->
+        
+        <div class="row">
+            <div class="col-sm-4">
+                <figure>
+                    <%= image_tag "img/blog/blog_01.jpg", alt: "" %>
+                </figure>
+                <h5>Lorem ipsum dolor sit</h5>
+                <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div><!-- end col -->
+            <div class="col-sm-4">
+                <figure>
+                    <%= image_tag "img/blog/blog_02.jpg", alt: "" %>
+                </figure>
+                <h5>Consectetur adipiscing</h5>
+                <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div><!-- end col -->
+            <div class="col-sm-4">
+                <figure>
+                    <%= image_tag "img/blog/blog_03.jpg", alt: "" %>
+                </figure>
+                <h5>Lorem ipsum dolor sit</h5>
+                <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div><!-- end col -->
+        </div><!-- end row -->
+
+
+        <hr class="spacer-100">
+                
+        <div class="row">
+            <div class="col-sm-12">
+                <h4 class="mb-20">Our Store Locations</h4>
+            </div><!-- end col -->
+        </div><!-- end row -->
+        
+        <div class="row column-4">
+            <div class="col-sm-6 col-md-3">
+                <div class="icon-boxes style2 light-backgorund">
+                    <div class="box-content text-left">
+                        <h6 class="alt-font">Istanbul</h6>
+                        <p>
+                            77 Mass. Ave., E14/E15
+                            <br>
+                            Seattle, MA 02139-4307 USA
+                        </p>
+                    </div>
+                </div><!-- icon-box -->
+            </div><!-- end col -->
+            <div class="col-sm-6 col-md-3">
+                <div class="icon-boxes style2 light-backgorund">
+                    <div class="box-content text-left">
+                        <h6 class="alt-font">New York</h6>
+                        <p>
+                            77 Mass. Ave., E14/E15
+                            <br>
+                            Seattle, MA 02139-4307 USA
+                        </p>
+                    </div>
+                </div><!-- icon-box -->
+            </div><!-- end col -->
+            <div class="col-sm-6 col-md-3">
+                <div class="icon-boxes style2 light-backgorund">
+                    <div class="box-content text-left">
+                        <h6 class="alt-font">London</h6>
+                        <p>
+                            77 Mass. Ave., E14/E15
+                            <br>
+                            Seattle, MA 02139-4307 USA
+                        </p>
+                    </div>
+                </div><!-- icon-box -->
+            </div><!-- end col -->
+            <div class="col-sm-6 col-md-3">
+                <div class="icon-boxes style2 light-backgorund">
+                    <div class="box-content text-left">
+                        <h6 class="alt-font">Paris</h6>
+                        <p>
+                            77 Mass. Ave., E14/E15
+                            <br>
+                            Seattle, MA 02139-4307 USA
+                        </p>
+                    </div>
+                </div><!-- icon-box -->
+            </div><!-- end col -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section>
+<!-- end section -->
+
+<!-- start section -->
+<section class="section image-background layer-white" style="background-image: url(<%= asset_path 'img/coming-soon-bg.jpg' %>);">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-sm-8 col-sm-offset-2">
+                <p class="lead text-dark">If you have any questions or concerns, please send us a message, and we'll get you an answare as soon as posible</p>
+                <a href="contact-v1.html" class="btn btn-default semi-circle btn-md"><i class="fa fa-envelope mr-5"></i> Send a message</a>
+            </div><!-- end col -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section>
+<!-- end section -->
