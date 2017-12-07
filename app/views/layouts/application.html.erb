@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Plus</title>
+    <%= csrf_meta_tags %>
+
+    <%= render 'layouts/metadata' %>
+
+    <!--Favicon-->
+    <%= favicon_link_tag 'img/favicon.ico', rel: 'shortcut icon', type: 'image/x-icon' %>
+    <%= favicon_link_tag 'img/favicon.ico', rel: 'icon', type: 'image/x-icon' %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <!-- Google fonts -->
+    <%= render 'layouts/googlefonts' %>
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <%= javascript_include_tag 'http://maps.googleapis.com/maps/api/js?key=YOUR_KEY&sensor=true' %>
+  </head>
+
+  <body>
+
+  	<%= render 'layouts/header' %>
+
+    <%= yield %>
+
+    <%= render 'layouts/footer' %>
+
+  </body>
+</html>
