@@ -1,0 +1,109 @@
+<!-- DASHBOARD PROFILE SECTION -->
+<section class="clearfix bg-dark profileSection">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-sm-5 col-xs-12">
+				<div class="dashboardBoxBg mb30">
+					<div class="profileImage">
+						<%= image_tag "img/dashboard/user-2.jpg", alt: "Image User", class: "img-circle" %>
+						<div class="file-upload profileImageUpload">
+							<div class="upload-area">
+								<input type="file" name="img[]" class="file">
+								<button class="browse" type="button">Upload a Picture <i class="fa fa-upload" aria-hidden="true"></i></button>
+							</div>
+						</div>
+					</div>
+					<div class="profileUserInfo border-top profileName">
+						<p>Your Current Plan</p>
+						<h2>Platinum Package</h2>
+						<h5>Next Payment: <span>15/01/2017</span></h5>
+						<a href="#" class="btn btn-primary">Change</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-8 col-sm-7 col-xs-12">
+				<div class="dashboardBoxBg">
+					<div class="profileIntro">
+						<h2>Your Profile</h2>
+                        <p>Hi <strong>username</strong>! you can change your info <a href="user-information.html">here</a></p>
+						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form Ipsum available.</p>
+					</div>
+				</div>
+
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        
+                        <hr class="spacer-30 no-border">
+                        
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h5 class="mb-20 thin"><a href="javascript:void(0);">Recently Viewed</a></h5>
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <div id="owl-demo" class="owl-carousel column-5 owl-theme">
+                            <div class="item">
+                                <figure>
+                                    <a href="shop-single-product-v1.html">
+                                        <%= image_tag "img/products/men_01.jpg", alt: "" %>
+                                    </a>
+                                </figure>
+                            </div><!-- end item -->
+                            <div class="item">
+                                <figure>
+                                    <a href="shop-single-product-v1.html">
+                                        <%= image_tag "img/products/fashion_01.jpg", alt: "" %>
+                                    </a>
+                                </figure>
+                            </div><!-- end item -->
+                            <div class="item">
+                                <figure>
+                                    <a href="shop-single-product-v1.html">
+                                        <%= image_tag "img/products/fashion_02.jpg", alt: "" %>
+                                    </a>
+                                </figure>
+                            </div><!-- end item -->
+                            <div class="item">
+                                <figure>
+                                    <a href="shop-single-product-v1.html">
+                                        <%= image_tag "img/products/hoseholds_03.jpg", alt: "" %>
+                                    </a>
+                                </figure>
+                            </div><!-- end item -->
+                            <div class="item">
+                                <figure>
+                                    <a href="shop-single-product-v1.html">
+                                        <%= image_tag "img/products/bags_04.jpg", alt: "" %>
+                                    </a>
+                                </figure>
+                            </div><!-- end item -->
+                            <div class="item">
+                                <figure>
+                                    <a href="shop-single-product-v1.html">
+                                        <%= image_tag "img/products/men_03.jpg", alt: "" %>
+                                    </a>
+                                </figure>
+                            </div><!-- end item -->
+                            <div class="item">
+                                <figure>
+                                    <a href="shop-single-product-v1.html">
+                                        <%= image_tag "img/products/technology_02.jpg", alt: "" %>
+                                    </a>
+                                </figure>
+                            </div><!-- end item -->
+                            <div class="item">
+                                <figure>
+                                    <a href="shop-single-product-v1.html">
+                                        <%= image_tag "img/products/shoes_01.jpg", alt: "" %>
+                                    </a>
+                                </figure>
+                            </div><!-- end item -->
+                        </div><!-- end owl carousel -->
+                        
+                    </div><!-- end col -->
+                </div><!-- end row -->
+			</div>
+		</div>
+	</div>
+</section>
