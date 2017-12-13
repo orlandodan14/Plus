@@ -197,26 +197,41 @@
 
                                     <hr class="spacer-5 no-border">
 
-                                    <div class="form-group">
-                                        <input type="text" class="form-control input-lg" placeholder="Your Name">
-                                    </div><!-- end form-group -->
-                                    <div class="form-group">
-                                        <input type="email" class="form-control input-lg" placeholder="Email">
-                                    </div><!-- end form-group -->
-                                    <div class="form-group">
-                                        <input type="password" class="form-control input-lg" placeholder="Password">
-                                    </div><!-- end form-group -->
-                                    <div class="form-group text-left">
-                                        <div class="checkbox-input mb-10 pull-left">
-                                            <input id="remember" class="styled" type="checkbox">
-                                            <label for="remember">
-                                                Remember me
-                                            </label>
-                                        </div><!-- end checkbox-input -->
-                                    </div><!-- end form-group -->
-                                    <div class="form-group">
-                                        <input type="submit" class="btn btn-default btn-block round btn-lg" value="Log In">
-                                    </div><!-- end form-group -->
+                                    <%= form_for @user do |f| %>
+                                        <div class="form-group">
+                                            <%= f.text_field :name, class: "form-control input-lg", placeholder: "Your name" %>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <%= f.email_field :email, class: "form-control input-lg", placeholder: "Email" %>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <%= f.password_field :password, class: "form-control input-lg", placeholder: "Password" %>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <%= f.password_field :password_confirmation, class: "form-control input-lg", placeholder: "Confirm your password" %>
+                                        </div>
+
+
+                                        <div class="form-group text-left">
+                                            <div class="checkbox-input mb-10 pull-left">
+                                                <input id="remember" class="styled" type="checkbox">
+                                                <label for="remember">
+                                                    Remember me
+                                                </label>
+                                            </div><!-- end checkbox-input -->
+                                        </div><!-- end form-group -->
+
+                                        <div class="form-group">
+                                            <%=  f.submit "Sign up", class: "btn btn-default btn-block round btn-lg" %>
+                                        </div><!-- end form-group -->
+
+                                    <% end %>
 
                                     <div class="or hidden-xs">or</div>
 
