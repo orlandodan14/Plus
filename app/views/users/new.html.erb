@@ -1,0 +1,82 @@
+<%= provide(:title, "Sign up") %>
+<!-- Modal Register -->
+<div class="account" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+      			<%= render 'shared/error_messages' %>
+                <div class="row display-table text-center">
+
+                    <div class="col-sm-6 vertical-align">
+                        <div class="inner-content">
+                            <h3>Register</h3>
+                            <p class="lead">Create an account</p>
+
+                            <hr class="spacer-5 no-border">
+
+                            <%= form_for(@user, url: signup_path) do |f| %>
+
+                                <div class="form-group">
+                                    <%= f.text_field :name, class: "form-control input-lg", placeholder: "Your name" %>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <%= f.email_field :email, class: "form-control input-lg", placeholder: "Email" %>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <%= f.password_field :password, class: "form-control input-lg", placeholder: "Password" %>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <%= f.password_field :password_confirmation, class: "form-control input-lg", placeholder: "Confirm your password" %>
+                                </div>
+
+
+                                <div class="form-group text-left">
+                                    <div class="checkbox-input mb-10 pull-left">
+                                        <input id="remember" class="styled" type="checkbox">
+                                        <label for="remember">
+                                            Remember me
+                                        </label>
+                                    </div><!-- end checkbox-input -->
+                                </div><!-- end form-group -->
+
+                                <div class="form-group">
+                                    <%=  f.submit "Sign up", class: "btn btn-default btn-block round btn-lg" %>
+                                </div><!-- end form-group -->
+
+                            <% end %>
+
+                            <div class="or hidden-xs">or</div>
+
+                        </div><!-- inner-content -->
+
+                    </div><!-- end col -->
+
+                    <div class="col-sm-6 vertical-align">
+
+                        <div class="inner-content">
+                            <h3 class="">Sign Up</h3>
+                            <p class="lead">with one of your social profiles</p>
+
+                            <ul class="social-icons style2">
+                                <li class="facebook"><a class="semi-circle" href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+                                <li class="twitter"><a class="semi-circle" href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+                                <li class="google-plus"><a class="semi-circle" href="javascript:void(0);"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+
+                            <hr class="spacer-10 no-border"/>
+
+                            <p>Do you have an account? <a href="javascript:void(0);" data-toggle="modal" data-target=".loginModal" data-dismiss="modal" aria-label="Close" class="">Log In</a></p>
+
+                        </div><!-- end inner-content -->
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end modal-body -->
+        </div><!-- end modal-content -->
+    </div><!-- end modal-dialog -->
+</div><!-- end registerModal -->
