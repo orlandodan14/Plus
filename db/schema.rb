@@ -10,6 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20171213134308) do
 
   create_table "users", force: :cascade do |t|
@@ -19,5 +20,8 @@ ActiveRecord::Schema.define(version: 20171213134308) do
     t.datetime "updated_at", null: false
     t.string "password_digest"
   end
+=======
+ActiveRecord::Schema.define(version: 0) do
+>>>>>>> static-pages
 
 end
