@@ -22,14 +22,15 @@
 
   <body>
 
-  	<%= render 'layouts/header' %>
+  	<%= render 'layouts/header' %>    
 
-    <%= render 'layouts/breadcrumbs' %>
-
-    
+    <% if flash.any? %>
       <% flash.each do |message_type, message| %>
-        <%= content_tag(:div, message, class: "container alert alert-#{message_type}") %>
+        <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
       <% end %>
+    <% else %>
+      <%= render 'layouts/breadcrumbs' %>
+    <% end %>
 
     <%= yield %>
 
