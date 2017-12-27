@@ -15,6 +15,7 @@
 //= require owl.carousel
 //= require jquery.countdown
 //= require jquery.countdown-es
+//= require jquery.downCount
 //= require nouislider
 //= require rails-ujs
 //= require jquery.sticky

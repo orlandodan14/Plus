@@ -17,7 +17,7 @@
 
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-    <%= javascript_include_tag 'http://maps.googleapis.com/maps/api/js?key=YOUR_KEY&sensor=true' %>
+    <%= javascript_include_tag 'http://maps.googleapis.com/maps/api/js?key=AIzaSyBfvtuIHyjwzEsCDnVtGiv-G7CpsWbHxl4' %>
   </head>
 
   <body>
@@ -28,14 +28,18 @@
 
     
       <% flash.each do |message_type, message| %>
-        <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
+        <%= content_tag(:div, message, class: "container alert alert-#{message_type}") %>
       <% end %>
 
     <%= yield %>
 
     <%= render 'layouts/footer' %>
 
-    <%= render 'layouts/modals' %>
+    <%= render 'layouts/viewmodal' %>
+
+    <%= render 'layouts/loginmodal' %>
+
+    <%= render 'layouts/registermodal' %>
 
   </body>
 </html>

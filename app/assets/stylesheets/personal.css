@@ -3,9 +3,21 @@
 	padding-right: 5%; 
 }
 
+.horizontal-margin-5 {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 .border-top {
   border-top: 1px solid #e5e5e5; }
 
+@media (min-width: 768px) {
+.navbar-nav > li > a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+/* ======= PROFILE SECTION =====*/
 .profileSection {
   padding: 50px 0; }
   @media (min-width: 768px) {
@@ -125,6 +137,8 @@
   font-weight: 300; }
 
 
+
+/* ==== lOGIN SECTION =====*/
 .loginSection .col-md-5.col-sm-6.col-xs-12 {
   padding: 0 15px; }
   @media (min-width: 992px) {
@@ -154,7 +168,7 @@
 .loginPanel a.link {
   line-height: 44px; }
 
-/*=== 2.12 PANEL ===*/
+/*=== LOGIN PANEL ===*/
 .panel.loginPanel {
   border: none; }
   .panel.loginPanel .panel-heading {
@@ -187,6 +201,8 @@
       line-height: 60px;
       font-size: 15px; }
 
+/* === SHOW ERRORS SIGN UP ===*/
+
 #error_explanation {
   color: red;
   ul {
@@ -201,3 +217,19 @@
     color: $state-danger-text;
   }
 }
+
+/* ==== Search ====== */
+
+.input-group-addon {
+  border-radius: 4px 0 0 4px;
+  border-right: 1px solid #e5e5e5;
+  padding: 6px 22px;
+  color: #222222; }
+.input-group-addon.addon-right {
+  border-radius: 0 4px 4px 0;
+  padding: 6px 20px; }
+
+#btn-search {
+  border-radius: 4px;
+}
+

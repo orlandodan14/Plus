@@ -88,9 +88,6 @@
 <!-- end section -->
 
 
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
-
-
 <script type="text/javascript">
     $(document).ready(function(){
         // Contact Map
@@ -116,7 +113,7 @@
             map.addMarker({
                 lat: 45.494447,
                 lng: -73.5697587,
-                icon: "img/marker.png",
+                icon: '<%= asset_path "img/marker.png" %>',
                 animation: google.maps.Animation.DROP,
                 verticalAlign: "bottom",
                 horizontalAlign: "center",
