@@ -1,0 +1,18 @@
+<%= form_for(:session, url: login_path) do |f| %>
+    <div class="form-group">
+        <%= f.email_field :email, class: 'form-control input-lg', placeholder: 'Email' %>
+    </div><!-- end form-group -->
+    <div class="form-group">
+        <%= f.password_field :password, class: "form-control input-lg", placeholder: "Password" %>
+    </div><!-- end form-group -->
+    <div class="form-group text-left">       
+        <%= f.label :remember do %>
+            <%= f.check_box :remember, id: 'remember', class: 'checkbox-input mb-10 mr-10 pull-left styled' %>
+            <span>Remember me</span>
+        <% end %>
+        <label class="pull-right"><a href="forgot-password.html">Forgot Password</a></label>
+    </div><!-- end form-group -->
+    <div class="form-group">
+        <%=  f.submit "Log in", class: "btn btn-default btn-block round btn-lg" %>
+    </div><!-- end form-group -->
+<% end %>

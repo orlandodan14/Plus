@@ -1,0 +1,41 @@
+<%= provide(:title, "Log in") %>
+
+<div class="account">
+    <div class="container modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+      			<%= render 'shared/error_messages' %>
+                <div class="row display-table text-center">
+
+                    <div class="col-sm-8 vertical-align">
+
+                        <div class="inner-content" style="padding: 0 40px">
+                            <h3>Login</h3>
+                            <p class="lead">to your account</p>
+
+                            <hr class="spacer-5 no-border">
+
+                            <%= render 'shared/loginform' %>
+
+                        </div><!-- inner-content -->
+                        <h5 class="">Or Sign in</h5>
+                            <p class="lead">with one of your social profiles</p>
+
+                            <ul class="social-icons style2">
+                                <li class="facebook"><a class="semi-circle" href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+                                <li class="twitter"><a class="semi-circle" href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+                                <li class="google-plus"><a class="semi-circle" href="javascript:void(0);"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+
+                            <hr class="spacer-10 no-border"/>
+
+                            <p>Don't have an account? <a href="javascript:void(0);" data-toggle="modal" data-target=".registerModal" data-dismiss="modal" aria-label="Close" class="">Register</a></p>
+
+                            <hr class="spacer-2 no-border">
+
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end modal-body -->
+        </div><!-- end modal-content -->
+    </div><!-- end modal-dialog -->
+</div><!-- end registerModal -->
