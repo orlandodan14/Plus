@@ -1,4 +1,4 @@
-<% provide(:title, @user.name) %>
+<% provide(:title, @user.first_name) %>
 <!-- DASHBOARD PROFILE SECTION -->
 <section class="clearfix bg-dark profileSection">
 	<div class="container">
@@ -26,7 +26,7 @@
 				<div class="dashboardBoxBg">
 					<div class="profileIntro">
 						<h2>Your Profile</h2>
-                        <p>Hi <strong><%= @user.name %></strong>! you can change your info <a href="user-information.html">here</a></p>
+                        <p>Hi <strong><%= @user.first_name %></strong>! you can change your info <a href="user-information.html">here</a></p>
 						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form Ipsum available.</p>
 					</div>
 				</div>

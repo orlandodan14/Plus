@@ -6,7 +6,7 @@ class UserTest < ActiveSupport::TestCase
   # end
 
   def setup
-  	@user = User.new(name: "Example User", email: "user@example.com", password: "foobar", password_confirmation: "foobar")
+  	@user = User.new(first_name: "Example User", email: "user@example.com", password: "foobar", password_confirmation: "foobar")
     # This user is not saved
   end
 
@@ -14,8 +14,8 @@ class UserTest < ActiveSupport::TestCase
   	assert @user.valid?
   end
 
-  test "name should be valid" do
-  	@user.name = "    "
+  test "first_name should be valid" do
+  	@user.first_name = "    "
   	assert_not @user.valid?
   end
 
@@ -24,8 +24,8 @@ class UserTest < ActiveSupport::TestCase
     assert_not @user.valid?
   end
 
-  test "name should not be too long" do
-    @user.name = "a" * 21
+  test "first_name should not be too long" do
+    @user.first_name = "a" * 21
     assert_not @user.valid?
   end
 
@@ -43,7 +43,7 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test "email validation should reject invalid addresses" do
-    invalid_addresses = %w[user@example,com user_at_foo.org user.name@example. foo@bar_baz.com foo@bar+baz.com]
+    invalid_addresses = %w[user@example,com user_at_foo.org user.first_name@example. foo@bar_baz.com foo@bar+baz.com]
     invalid_addresses.each do |invalid_address|
       @user.email = invalid_address
       assert_not @user.valid?, "#{invalid_address.inspect} should be invalid"
