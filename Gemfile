@@ -28,6 +28,10 @@ gem 'bcrypt'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'faker'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
+
 
 # Use css gemes for links in Plus theme index file 
 gem 'bootstrap-sass'

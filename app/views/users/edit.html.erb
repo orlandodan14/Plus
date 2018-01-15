@@ -24,22 +24,14 @@
 				</div>
 			</div>
 			<div class="col-md-8 col-sm-7 col-xs-12">
-				<form>
-					<div class="dashboardBoxBg">
-						<div class="profileIntro">
-							<h2>Your Profile</h2>
-							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form Ipsum available.</p>
-						</div>
-					</div>
+				<%= form_for(@user) do |f| %>						
+					<%= render 'shared/error_messages' 	%>
 					<div class="dashboardBoxBg mt30">
-						<%= form_for(@user) do |f| %>						
-							<%= render 'shared/error_messages' 	%>
 						<div class="profileIntro">
 							<h3>About You</h3>
 							<div class="row">
 
 								<div class="form-group col-sm-6 col-xs-12">
-<<<<<<< HEAD
 								  <%= f.label :first_name, "First Name" %>
 								  <%= f.text_field :first_name, class: 'form-control', id: "firstNameProfile", placeholder: @user.first_name %>
 								</div>
@@ -47,17 +39,8 @@
 								<div class="form-group col-sm-6 col-xs-12">
 									<label for="lastNameProfile">Last Name</label>
 									<input type="text" class="form-control" id="lastNameProfile" placeholder="Doe">
-=======
-								  <%= f.label :name, "First Name" %>
-								  <%= f.text_field :name, class: 'form-control', id: "firstNameProfile", placeholder: @user.name %>
 								</div>
-
-								<div class="form-group col-sm-6 col-xs-12">
-								  <%= f.label :name, "Last Name" %>
-								  <%= f.text_field :name, class: 'form-control', id: "lastNameProfile", placeholder: @user.name %>
->>>>>>> master
-								</div>
-
+								
 								<div class="form-group col-sm-6 col-xs-12">
 									<%= f.label :email %>
 									<%= f.email_field :email, class: "form-control", id: "emailProfile", placeholder: @user.email %>
@@ -67,6 +50,7 @@
 									<label for="phoneProfile">Phone</label>
 									<input type="text" class="form-control" id="phoneProfile" placeholder="254 - 265 - 3265">
 								</div>
+
 								<div class="form-group col-xs-12">
 									<label for="aboutYou">About You</label>
 									<textarea class="form-control" rows="5" id="aboutYou" placeholder="About You"></textarea>
@@ -98,13 +82,14 @@
 							</div>
 						</div>
 					</div>
+
 					<div class="dashboardBoxBg mt30">
 						<div class="profileIntro">
 							<h3>Update password</h3>
 							<div class="row">
 								<div class="form-group col-xs-12">
-									<%= f.label :password, "Current Password" %>
-									<%= f.password_field :password, class: "form-control", id: "currentPassword", placeholder: "********" %>
+									<label for="currentPassword">Current Password</label>
+									<input type="password" class="form-control" id="currentPassword" placeholder="********">
 								</div>
 								<div class="form-group col-xs-12">
 									<%= f.label :password, "New Password" %>
@@ -120,8 +105,7 @@
 							</div>
 						</div>
 					</div>
-					<% end %>
-				</form>
+				<% end %>
 			</div>
 		</div>
 	</div>
