@@ -10,7 +10,7 @@
             <%= f.check_box :remember, id: 'remember', class: 'checkbox-input mb-10 mr-10 pull-left styled' %>
             <span>Remember me</span>
         <% end %>
-        <label class="pull-right"><a href="forgot-password.html">Forgot Password</a></label>
+        <label class="pull-right"><%= link_to "Forgot Password", new_password_reset_path %></label>
     </div><!-- end form-group -->
     <div class="form-group">
         <%=  f.submit "Log in", class: "btn btn-default btn-block round btn-lg" %>
